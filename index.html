@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookie - Independent Books & Magazines</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <figure class="brand">
+                <h1>Bookie<sup>®</sup></h1>
+            </figure>
+            
+            <ul class="nav-links">
+                <li><a href="#shop">SHOP ALL</a></li>
+                <li><a href="#offers">SPECIAL OFFERS</a></li>
+                <li><a href="#new">NEW</a></li>
+                <li><a href="#books">BOOKS</a></li>
+                <li><a href="#magazines">MAGAZINES</a></li>
+                <li><a href="#gift">GIFT CARD</a></li>
+            </ul>
+            
+            <aside class="user-actions">
+                <button class="account-btn" aria-label="Account">
+                    <img src="assets/account-icon.svg" alt="">
+                </button>
+                <button class="wishlist-btn" aria-label="Wishlist" data-count="0">
+                    <svg class="heart-icon" viewBox="0 0 24 24" width="24" height="24">
+                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                    </svg>
+                    <span class="wishlist-count">0</span>
+                </button>
+                <button class="cart-btn">
+                    Cart (0)
+                </button>
+            </aside>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <p class="tagline">Bookie specialize in unique, independent books and magazines from across the globe, showcasing the creators and endeavors preserving the art of print media.</p>
+            <article class="hero-feature">
+                <h1>Discover<br>Great<br>Books</h1>
+                <figure>
+                    <img src="./html/assets/image.jpg" alt="Stack of books" class="hero-image">
+                </figure>
+            </article>
+        </section>
+
+        <section class="new-releases" id="new">
+            <h2>New Releases</h2>
+            <section class="books-grid">
+                <article class="book-card yellow-bg">
+                    <mark class="badge">New In</mark>
+                    <figure>
+                        <img src="./html/assets/Echoes of the cosmos.jpg" alt="Echoes of The Cosmos by Juno Syren" class="book-cover">
+                        <figcaption>
+                            <h3>Echoes of The Cosmos</h3>
+                            <p class="author">Juno Syren</p>
+                        </figcaption>
+                    </figure>
+                </article>
+                
+                <article class="book-card red-bg">
+                    <mark class="badge">New In</mark>
+                    <figure>
+                        <img src="./html/assets/Harry potter.jpg" alt=" by J.K. Rowling" class="book-cover">
+                        <figcaption>
+                            <h3>The Serpent's Crown</h3>
+                            <p class="author">J.K. Rowling</p>
+                        </figcaption>
+                    </figure>
+                </article>
+                
+                <article class="book-card blue-bg">
+                    <mark class="badge">New In</mark>
+                    <figure>
+                        <img src="./html/assets/I'm malala.jpg" alt="Book cover" class="book-cover">
+                        <figcaption>
+                            <h3>Whispering Trees</h3>
+                            <p class="author">Malala Yousafzai with christina lamb</p>
+                            <p class="publisher">Little, Brown and company</p>
+                        </figcaption>
+                    </figure>
+                </article>
+            </section>
+        </section>
+
+        <section class="special-offers" id="offers">
+            <article class="promo-banner">
+                <header>
+                    <h2>
+                        <mark class="highlight">Enjoy Up to 25% Off</mark><br>
+                        Bestsellers & New Releases
+                    </h2>
+                </header>
+                <p class="promo-text">
+                    Don't miss our special offers on a wide selection of books and indie magazines - featuring captivating designs and insightful content. Explore new artists and creators today!
+                </p>
+                <footer>
+                    <a href="#shop-sale" class="cta-button">SHOP SALE</a>
+                </footer>
+            </article>
+        </section>
+
+        <section class="magazine-feature" id="magazines">
+            <h2>Featured Magazines</h2>
+            <article class="magazine-slider">
+                <button class="slider-nav prev" aria-label="Previous magazine">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+                    </svg>
+                </button>
+                
+                <figure class="magazine-slide">
+                    <img src="./html/assets/360 travel.jpg" alt="360° Magazine - Mount Etna cover" class="magazine-cover">
+                    <figcaption>
+                        <h3>360° Magazine</h3>
+                        <p class="issue-details">Mount Etna Special Edition</p>
+                    </figcaption>
+                </figure>
+
+                <button class="slider-nav next" aria-label="Next magazine">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/>
+                    </svg>
+                </button>
+            </article>
+        </section>
+
+        <section class="featured-books" id="books">
+            <h2>Featured Books</h2>
+            <div class="books-showcase">
+                <article class="book-item blue-bg">
+                    <figure>
+                        <img src="./html/assets/Subtle art of not giving.jpg" alt="Subtle art of not giving" class="book-cover">
+                        <figcaption>
+                            <h3>Subtle art of not giving</h3>
+                            <p class="author">Mark Manson</p>
+                            <p class="price">$40.00</p>
+                        </figcaption>
+                    </figure>
+                </article>
+
+                <article class="book-item yellow-bg">
+                    <mark class="sale-badge">Sale</mark>
+                    <figure>
+                        <img src="./html/assets/Thousand splendid sun.jpg" alt="Thousand splendid sun" class="book-cover">
+                        <figcaption>
+                            <h3>Thousand splendid sun</h3>
+                            <p class="author">Khaled Hosseini</p>
+                            <div class="price-group">
+                                <s class="original-price">$40.00</s>
+                                <p class="sale-price">$30.00</p>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </article>
+
+                <article class="book-item white-bg">
+                    <figure>
+                        <img src="./html/assets/Bar book.jpg" alt="The essential bar book" class="book-cover">
+                        <figcaption>
+                            <h3>The essential bar book 23</h3>
+                            <p class="price">$28.00</p>
+                        </figcaption>
+                    </figure>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Footer content here -->
+    </footer>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <section class="footer-section">
+                <h2>Shop</h2>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#best-seller">Best Seller</a></li>
+                        <li><a href="#magazines">Magazines</a></li>
+                        <li><a href="#books">Books</a></li>
+                        <li><a href="#gift">Gift Card</a></li>
+                    </ul>
+                </nav>
+            </section>
+
+            <section class="footer-section">
+                <h2>Helpful Links</h2>
+                <nav>
+                    <ul>
+                        <li><a href="/privacy">Privacy Policy</a></li>
+                        <li><a href="/refund">Refund Policy</a></li>
+                        <li><a href="/shipping">Shipping Policy</a></li>
+                        <li><a href="/terms">Terms & Conditions</a></li>
+                        <li><a href="/accessibility">Accessibility Statement</a></li>
+                    </ul>
+                </nav>
+            </section>
+
+            <section class="footer-section contact">
+                <h2>Contact</h2>
+                <address>
+                    <p>500 Terry Francine Street</p>
+                    <p>San Francisco, CA 94158</p>
+                    <a href="mailto:info@mysite.com">info@mysite.com</a>
+                    <a href="tel:123-456-7890">123-456-7890</a>
+                </address>
+            </section>
+
+            <section class="footer-section newsletter">
+                <h2>Join Our Newsletter</h2>
+                <form id="newsletter-form" class="newsletter-form">
+                    <div class="form-group">
+                        <label for="email">Email <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="subscribe" name="subscribe" required>
+                        <label for="subscribe">Yes, subscribe me to your newsletter.</label>
+                    </div>
+                    <button type="submit" class="subscribe-btn">Subscribe</button>
+                </form>
+            </section>
+        </div>
+    </footer>
+
+    <footer class="copyright-footer">
+        <div class="copyright-content">
+            <figure class="footer-logo">
+                <img src="assets/bookie-logo.svg" alt="Bookie" class="logo-image">
+            </figure>
+            <p class="copyright-text">© 2024 Bookie. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
